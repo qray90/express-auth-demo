@@ -8,7 +8,7 @@ POST {{uri}}register
 Content-Type: application/json
 
 {
-  "username": "admin",
+  "username": "admin3",
   "password": "admim"
 }
 
@@ -17,9 +17,10 @@ POST {{uri}}login
 Content-Type: application/json
 
 {
-  "username": "admin",
+  "username": "admin2",
   "password": "admim"
 }
 
 ###
 GET {{uri}}userInfo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlM2VkNWJmODgxNjA3MzcwY2EzNTYyNSIsImlhdCI6MTU4MTE3NjU5Mn0.JJ8pGYRcD-dkxE-to_-sAJc-XySbqyBeG3ZrOEWo5iI
