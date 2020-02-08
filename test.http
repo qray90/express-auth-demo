@@ -1,0 +1,25 @@
+@uri=http://localhost:3001/
+
+###
+GET {{uri}}users
+
+###
+POST {{uri}}register
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "admim"
+}
+
+###
+POST {{uri}}login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "admim"
+}
+
+###
+GET {{uri}}userInfo
