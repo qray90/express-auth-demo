@@ -1,8 +1,11 @@
 const express = require('express')
 const app = express()
 const jwt = require('jsonwebtoken')
+const dotenv = require('dotenv')
 
-const SECRET = 'aeriu8923uiiaaiue8r'
+dotenv.config()
+
+const SECRET = process.env.SECRET
 
 app.use(express.json());
 
