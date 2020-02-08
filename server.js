@@ -11,7 +11,12 @@ app.get('/users', async (req, res) => {
 })
 
 app.post('/register', async (req, res) => {
-  res.send(req.body)
+  const user = await User.create({
+    username: req.body.username,
+    password: require('bcrypt').hashSync(req.body.password, 'aeriu8923uiiaaiue8r')
+  })
+
+  res.send(user)
 })
 
 app.post('/login', async (req, res) => {
